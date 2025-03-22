@@ -1,0 +1,63 @@
+<div class="card">
+    <div class="card-header">Enregistrement des données</div>
+    <div class="card-body">
+
+        <form id="myForm" onsubmit="handleFormSubmit(this)"> 
+<div id="message"></div>
+<input type="text" id="RecId" name="RecId" value="ID" style="display: none">
+
+<!-- Input type text -->
+<div class="form-group">
+    <label for="nama">Nom & prénom (s)</label>
+    <input type="text" class="form-control" name="nama" id="nama" required>
+</div>
+
+<!-- Input text grid -->
+<div class="form-group">
+    <div class="row">
+        <div class="col">
+            <label>Adresse email</label>
+            <input type="email" name="email" id="email" class="form-control" required>
+        </div>
+        <div class="col">
+            <label>Téléphone</label>
+            <input type="number" name="telp" id="telp" class="form-control" required>
+        </div>
+    </div>
+</div>
+<!-- <option value="Laki-Laki">Laki-Laki</option>
+ <option value="Perempuan">Perempuan</option>
+<!-- Input text grid -->
+<div class="form-group">
+    <div class="row">
+        <div class="col">
+            <label>Genre</label>
+            <select class="form-select" name="gender" id="gender">
+      <option value="">---Genre---</option>          
+    </select>
+        </div>
+        <div class="col">
+            <label>Date de naissance</label>
+            <input type="text" class="form-control" name="tglLahir" id="tglLahir" placeholder="Tanggal" onfocus="(this.type = 'date')" required>
+        </div>
+    </div>
+</div>
+
+
+<!-- Input text grid -->
+<div class="form-group">
+    <div class="row">
+        <div class="col">
+            <label>Pays</label>
+            <select class="form-select" name="kota" id="kota" required>
+      <option value="">---Pays---</option>
+    </select>
+        </div>
+
+    </div>
+</div>
+
+        </form>
+
+    </div>
+</div>
